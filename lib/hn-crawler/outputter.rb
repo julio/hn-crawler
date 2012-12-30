@@ -6,7 +6,7 @@ module Hn
     end
 
     def output
-      puts "#{@index}) #{@page.title.strip}"
+      puts "#{@index}) #{@page.title.strip.gsub(/\n/, ' ')}"
     end
   end
 end
